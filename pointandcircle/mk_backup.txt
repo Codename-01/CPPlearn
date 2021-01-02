@@ -1,0 +1,12 @@
+# test:test.o point.o circle.o
+# 	g++ -o test point.o circle.o test.o
+# 	rm *.o
+# test.o:test.cpp
+# 	g++ -c -I ./include/ test.cpp
+# point.o:point.cpp ./include/point.h
+# 	g++ -c -I ./include point.cpp
+# circle.o:circle.cpp ./include/circle.h
+# 	g++ -c -I ./include circle.cpp
+# .PHONY:clean
+# clean:
+# 	rm *.o
